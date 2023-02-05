@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 414df7a048866be46bfd53a6e7f9e88d
+guid: 0a37e3da83268a541b5f237526199182
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Pistol Run
+      name: Idle
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 22
+      lastFrame: 298
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -238,7 +238,7 @@ ModelImporter:
         length: 0
         modified: 0
     - boneName: Hat_jnt
-      humanName: RightEye
+      humanName: LeftEye
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}
@@ -246,65 +246,65 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Pistol Run(Clone)
+    - name: Breathing Idle(Clone)
       parentName: 
-      position: {x: -0.020446982, y: -0.14719449, z: -0.20106448}
-      rotation: {x: 0.08179925, y: 0.12416826, z: 0.0036194983, w: 0.9888772}
+      position: {x: 0.024916975, y: -0.023651958, z: 0.024727255}
+      rotation: {x: -0.013266736, y: 0.0011462017, z: 0.008820106, w: 0.99987245}
       scale: {x: 0.01, y: 0.01, z: 0.01}
     - name: Root_jnt
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Hips_jnt
       parentName: Root_jnt
-      position: {x: -0, y: 104.4988, z: 0}
-      rotation: {x: -0.13643247, y: -0.103239745, z: 0.25348052, w: 0.95208997}
+      position: {x: -0.8730084, y: 104.51423, z: -0.0017972663}
+      rotation: {x: 0, y: 0, z: 0.2597436, w: 0.9656776}
       scale: {x: 1, y: 1, z: 1}
     - name: UpperLeg_Left_jnt
       parentName: Hips_jnt
       position: {x: -25.6982, y: 0, z: 0}
-      rotation: {x: -0.15017562, y: 0.018892257, z: 0.47291124, w: 0.8680123}
+      rotation: {x: -0.06891543, y: 0.045878027, z: 0.4763627, w: 0.8753425}
       scale: {x: 1, y: 1, z: 1}
     - name: LowerLeg_Left_jnt
       parentName: UpperLeg_Left_jnt
       position: {x: -37.4522, y: 0, z: 0}
-      rotation: {x: 0.6937452, y: 0.18548667, z: 0.24997568, w: -0.64948016}
+      rotation: {x: -0.7368458, y: -0.15497416, z: -0.19608447, w: 0.6281657}
       scale: {x: 1, y: 1, z: 1}
     - name: Foot_Left_jnt
       parentName: LowerLeg_Left_jnt
       position: {x: -38.8744, y: 0, z: 0}
-      rotation: {x: 0.68732893, y: 0.29033518, z: -0.60837483, w: 0.27048945}
+      rotation: {x: 0.50042194, y: 0.50042236, z: -0.49957344, w: 0.49958155}
       scale: {x: 1, y: 1, z: 1}
     - name: UpperLeg_Right_jnt
       parentName: Hips_jnt
       position: {x: 12.7638, y: -22.3043, z: 0}
-      rotation: {x: -0.47785997, y: 0.87352234, z: -0.077671394, w: -0.0507525}
+      rotation: {x: -0.5381029, y: 0.83116925, z: 0.080439255, w: -0.11459701}
       scale: {x: 1, y: 1, z: 1}
     - name: LowerLeg_Right_jnt
       parentName: UpperLeg_Right_jnt
       position: {x: 37.4522, y: 0, z: 0}
-      rotation: {x: -0.66920435, y: -0.20448753, z: -0.26216146, w: 0.6645464}
+      rotation: {x: -0.7126767, y: -0.12083108, z: -0.14919734, w: 0.6747088}
       scale: {x: 1, y: 1, z: 1}
     - name: Foot_Right_jnt
       parentName: LowerLeg_Right_jnt
       position: {x: 38.8744, y: 0, z: 0}
-      rotation: {x: 0.5691722, y: 0.46411866, z: -0.50444776, w: 0.45405886}
+      rotation: {x: 0.50117093, y: 0.5011966, z: -0.4988293, w: 0.49879757}
       scale: {x: 1, y: 1, z: 1}
     - name: Body_jnt
       parentName: Hips_jnt
       position: {x: 0.9556, y: 1.6478, z: 0}
-      rotation: {x: -0.012318359, y: -0.014673188, z: 0.8664834, w: -0.4988382}
+      rotation: {x: -0.00020512826, y: -0.017086605, z: 0.866452, w: -0.4989679}
       scale: {x: 1, y: 1, z: 1}
     - name: Spine_jnt
       parentName: Body_jnt
       position: {x: -67.0325, y: 0, z: 0}
-      rotation: {x: -0.015898887, y: 0.03606845, z: -0.013040291, w: 0.99913776}
+      rotation: {x: -0.029588351, y: 0.01743159, z: -0.0016922094, w: 0.9994087}
       scale: {x: 1, y: 1, z: 1}
     - name: Head_jnt
       parentName: Spine_jnt
       position: {x: -31.0626, y: 0, z: 0}
-      rotation: {x: 0.0047236406, y: 0.12556641, z: -0.019707954, w: 0.9918782}
+      rotation: {x: 0.007379177, y: -0.024089318, z: 0.012637281, w: 0.9996027}
       scale: {x: 1, y: 1, z: 1}
     - name: Hat_jnt
       parentName: Head_jnt
@@ -314,12 +314,12 @@ ModelImporter:
     - name: UpperArm_Right_jnt
       parentName: Spine_jnt
       position: {x: -21.9108, y: 56.5232, z: 0}
-      rotation: {x: -0.66139436, y: 0.65325093, z: -0.25061065, w: 0.27021295}
+      rotation: {x: -0.68752605, y: 0.70779717, z: 0.13208362, w: -0.09426041}
       scale: {x: 1, y: 1, z: 1}
     - name: LowerArm_Right_jnt
       parentName: UpperArm_Right_jnt
       position: {x: -47.119, y: 0, z: 0}
-      rotation: {x: 0.00000007450581, y: -0.031703714, z: 0.00000032782557, w: 0.99949735}
+      rotation: {x: 0.0022906626, y: -0.025804963, z: -0.009506435, w: 0.9996192}
       scale: {x: 1, y: 1, z: 1}
     - name: Hand_Right_jnt
       parentName: LowerArm_Right_jnt
@@ -329,12 +329,12 @@ ModelImporter:
     - name: UpperArm_Left_jnt
       parentName: Spine_jnt
       position: {x: -21.9108, y: -56.5232, z: 0}
-      rotation: {x: 0.21405822, y: -0.20899731, z: -0.6675043, w: 0.68186307}
+      rotation: {x: -0.08379414, y: 0.11265136, z: -0.6942524, w: 0.705905}
       scale: {x: 1, y: 1, z: 1}
     - name: LowerArm_Left_jnt
       parentName: UpperArm_Left_jnt
       position: {x: 47.1188, y: 0, z: 0}
-      rotation: {x: 0.0029062328, y: -0.0121382605, z: -0.0059451116, w: 0.9999045}
+      rotation: {x: 0.0025412366, y: -0.026256634, z: -0.009722885, w: 0.99960476}
       scale: {x: 1, y: 1, z: 1}
     - name: Hand_Left_jnt
       parentName: LowerArm_Left_jnt
@@ -342,252 +342,252 @@ ModelImporter:
       rotation: {x: 6.123234e-17, y: 1, z: 6.123234e-17, w: -6.123201e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_AirportSecurity
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_AirportWorker
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Bellhop
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Businessman
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Cheerleader
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Clown
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Farmer
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_FarmersDaughter
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Firefighter
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_FootballPlayer
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Grandma
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Hobo
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Industrial
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Mechanic
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: 0.0002, y: 144.3756, z: 4.7998}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Mountie
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Pilot
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Pimp
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Prisoner
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Prostitute
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Roadworker
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Robber
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Runner
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Santa
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Shopkeeper
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Soldier
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Streetman
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Tourist
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Trucker
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Biohazard
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Businessman
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Doctor
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Farmer
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_FemaleHero
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_FemalePyro
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_FemaleSoldier
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_FemaleTrenchcoat
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Hazard
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_InjuredMan
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Male_01
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Male_02
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Male_03
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Male_04
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_MaleHunter
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: 0.0002, y: 149.8982, z: 13.901}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_HoodedMan
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_MaleTrenchcoat
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_OldMan
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Prisoner
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_RoadWorker
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Scout
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Sheriff
-      parentName: Pistol Run(Clone)
+      parentName: Breathing Idle(Clone)
       position: {x: 0.0002, y: 155.4861, z: 1.6343}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}

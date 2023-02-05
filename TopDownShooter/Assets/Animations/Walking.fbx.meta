@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 414df7a048866be46bfd53a6e7f9e88d
+guid: 5a8694f194b7277439d689482166b08c
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Pistol Run
+      name: Walk
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 22
+      lastFrame: 31
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -246,65 +246,65 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Pistol Run(Clone)
+    - name: Walking(Clone)
       parentName: 
-      position: {x: -0.020446982, y: -0.14719449, z: -0.20106448}
-      rotation: {x: 0.08179925, y: 0.12416826, z: 0.0036194983, w: 0.9888772}
+      position: {x: -0.016206967, y: -0.0021393895, z: -0.038385008}
+      rotation: {x: 0.017062321, y: -0.016517296, z: -0.008318282, w: 0.9996834}
       scale: {x: 0.01, y: 0.01, z: 0.01}
     - name: Root_jnt
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Hips_jnt
       parentName: Root_jnt
       position: {x: -0, y: 104.4988, z: 0}
-      rotation: {x: -0.13643247, y: -0.103239745, z: 0.25348052, w: 0.95208997}
+      rotation: {x: 0, y: 0, z: 0.2597436, w: 0.9656776}
       scale: {x: 1, y: 1, z: 1}
     - name: UpperLeg_Left_jnt
       parentName: Hips_jnt
       position: {x: -25.6982, y: 0, z: 0}
-      rotation: {x: -0.15017562, y: 0.018892257, z: 0.47291124, w: 0.8680123}
+      rotation: {x: -0.14985915, y: 0.073311165, z: 0.47895664, w: 0.86184007}
       scale: {x: 1, y: 1, z: 1}
     - name: LowerLeg_Left_jnt
       parentName: UpperLeg_Left_jnt
       position: {x: -37.4522, y: 0, z: 0}
-      rotation: {x: 0.6937452, y: 0.18548667, z: 0.24997568, w: -0.64948016}
+      rotation: {x: -0.6312876, y: -0.24141066, z: -0.23975766, w: 0.6969313}
       scale: {x: 1, y: 1, z: 1}
     - name: Foot_Left_jnt
       parentName: LowerLeg_Left_jnt
       position: {x: -38.8744, y: 0, z: 0}
-      rotation: {x: 0.68732893, y: 0.29033518, z: -0.60837483, w: 0.27048945}
+      rotation: {x: 0.55849254, y: 0.44569707, z: -0.51734644, w: 0.47094882}
       scale: {x: 1, y: 1, z: 1}
     - name: UpperLeg_Right_jnt
       parentName: Hips_jnt
       position: {x: 12.7638, y: -22.3043, z: 0}
-      rotation: {x: -0.47785997, y: 0.87352234, z: -0.077671394, w: -0.0507525}
+      rotation: {x: -0.48321894, y: 0.86917794, z: 0.019986996, w: -0.10310117}
       scale: {x: 1, y: 1, z: 1}
     - name: LowerLeg_Right_jnt
       parentName: UpperLeg_Right_jnt
       position: {x: 37.4522, y: 0, z: 0}
-      rotation: {x: -0.66920435, y: -0.20448753, z: -0.26216146, w: 0.6645464}
+      rotation: {x: -0.67561245, y: -0.07673077, z: -0.11632385, w: 0.72396755}
       scale: {x: 1, y: 1, z: 1}
     - name: Foot_Right_jnt
       parentName: LowerLeg_Right_jnt
       position: {x: 38.8744, y: 0, z: 0}
-      rotation: {x: 0.5691722, y: 0.46411866, z: -0.50444776, w: 0.45405886}
+      rotation: {x: 0.50117093, y: 0.5011966, z: -0.4988293, w: 0.49879757}
       scale: {x: 1, y: 1, z: 1}
     - name: Body_jnt
       parentName: Hips_jnt
       position: {x: 0.9556, y: 1.6478, z: 0}
-      rotation: {x: -0.012318359, y: -0.014673188, z: 0.8664834, w: -0.4988382}
+      rotation: {x: -0.018532703, y: -0.031884894, z: 0.8667857, w: -0.49731526}
       scale: {x: 1, y: 1, z: 1}
     - name: Spine_jnt
       parentName: Body_jnt
       position: {x: -67.0325, y: 0, z: 0}
-      rotation: {x: -0.015898887, y: 0.03606845, z: -0.013040291, w: 0.99913776}
+      rotation: {x: -0.03677463, y: 0.06399406, z: -0.008364976, w: 0.9972374}
       scale: {x: 1, y: 1, z: 1}
     - name: Head_jnt
       parentName: Spine_jnt
       position: {x: -31.0626, y: 0, z: 0}
-      rotation: {x: 0.0047236406, y: 0.12556641, z: -0.019707954, w: 0.9918782}
+      rotation: {x: 0.018570546, y: -0.0041983463, z: 0.002149399, w: 0.9998164}
       scale: {x: 1, y: 1, z: 1}
     - name: Hat_jnt
       parentName: Head_jnt
@@ -314,12 +314,12 @@ ModelImporter:
     - name: UpperArm_Right_jnt
       parentName: Spine_jnt
       position: {x: -21.9108, y: 56.5232, z: 0}
-      rotation: {x: -0.66139436, y: 0.65325093, z: -0.25061065, w: 0.27021295}
+      rotation: {x: -0.7081647, y: 0.69504297, z: 0.10495862, w: -0.06634532}
       scale: {x: 1, y: 1, z: 1}
     - name: LowerArm_Right_jnt
       parentName: UpperArm_Right_jnt
       position: {x: -47.119, y: 0, z: 0}
-      rotation: {x: 0.00000007450581, y: -0.031703714, z: 0.00000032782557, w: 0.99949735}
+      rotation: {x: 0.0017967522, y: -0.02689196, z: -0.008753598, w: 0.99959844}
       scale: {x: 1, y: 1, z: 1}
     - name: Hand_Right_jnt
       parentName: LowerArm_Right_jnt
@@ -329,12 +329,12 @@ ModelImporter:
     - name: UpperArm_Left_jnt
       parentName: Spine_jnt
       position: {x: -21.9108, y: -56.5232, z: 0}
-      rotation: {x: 0.21405822, y: -0.20899731, z: -0.6675043, w: 0.68186307}
+      rotation: {x: -0.18099189, y: 0.20167837, z: -0.65641344, w: 0.70405203}
       scale: {x: 1, y: 1, z: 1}
     - name: LowerArm_Left_jnt
       parentName: UpperArm_Left_jnt
       position: {x: 47.1188, y: 0, z: 0}
-      rotation: {x: 0.0029062328, y: -0.0121382605, z: -0.0059451116, w: 0.9999045}
+      rotation: {x: 0.00052574265, y: -0.031224594, z: -0.005429788, w: 0.99949753}
       scale: {x: 1, y: 1, z: 1}
     - name: Hand_Left_jnt
       parentName: LowerArm_Left_jnt
@@ -342,252 +342,252 @@ ModelImporter:
       rotation: {x: 6.123234e-17, y: 1, z: 6.123234e-17, w: -6.123201e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_AirportSecurity
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_AirportWorker
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Bellhop
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Businessman
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Cheerleader
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Clown
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Farmer
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_FarmersDaughter
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Firefighter
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_FootballPlayer
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Grandma
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Hobo
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Industrial
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Mechanic
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: 0.0002, y: 144.3756, z: 4.7998}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Mountie
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Pilot
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Pimp
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Prisoner
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Prostitute
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Roadworker
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Robber
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Runner
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Santa
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Shopkeeper
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Soldier
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Streetman
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Tourist
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Zombie_Trucker
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Biohazard
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Businessman
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Doctor
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Farmer
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_FemaleHero
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_FemalePyro
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_FemaleSoldier
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_FemaleTrenchcoat
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Hazard
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_InjuredMan
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Male_01
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Male_02
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Male_03
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Male_04
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_MaleHunter
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: 0.0002, y: 149.8982, z: 13.901}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_HoodedMan
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_MaleTrenchcoat
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_OldMan
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Prisoner
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_RoadWorker
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Scout
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamo:SA_Char_Survivor_Sheriff
-      parentName: Pistol Run(Clone)
+      parentName: Walking(Clone)
       position: {x: 0.0002, y: 155.4861, z: 1.6343}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
