@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody), typeof(Collider))]
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float playerMoveSpeed;
+    [SerializeField] private float attackRadius;
+    [SerializeField] private Image radiusVisualizator;
     [SerializeField] private VariableJoystick joystick;
 
     private Animator playerAnimator;
@@ -17,6 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         playerAnimator = GetComponent<Animator>();
         playerRigitbody = GetComponent<Rigidbody>();
+        radiusVisualizator.rectTransform.localScale = new Vector3(attackRadius, attackRadius, attackRadius) * 2;
     }
     private void Update()
     {
@@ -43,4 +47,9 @@ public class PlayerController : MonoBehaviour
     {
         if (joystick.Horizontal != 0 || joystick.Vertical != 0) transform.rotation = Quaternion.LookRotation(playerRigitbody.velocity);
     }
+    //void OnDrawGizmosSelected()
+    //{
+    //    Gizmos.color = Color.white;
+    //    Gizmos.DrawWireSphere(transform.position, attackRadius);
+    //}
 }

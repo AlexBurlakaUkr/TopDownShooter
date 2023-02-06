@@ -6,4 +6,5 @@ public class EnemyParametrs : MonoBehaviour
 {
     [SerializeField] internal float attackRange;
     [SerializeField] internal float chaseRange;
+    [SerializeField] internal string pointListName;
 }

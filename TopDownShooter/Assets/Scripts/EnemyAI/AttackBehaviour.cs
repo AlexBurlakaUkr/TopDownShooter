@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AttackBehaviour : StateMachineBehaviour
 {
-    Transform player;
     float attackRange;
+    protected Transform player;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;

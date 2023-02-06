@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class IdleBehavior : StateMachineBehaviour
 {
-    Transform player;
-    float chaseRange;
+    protected Transform player;
+    protected float chaseRange;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;

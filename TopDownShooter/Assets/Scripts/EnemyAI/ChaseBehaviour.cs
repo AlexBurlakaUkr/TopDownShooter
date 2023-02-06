@@ -3,11 +3,11 @@ using UnityEngine.AI;
 
 public class ChaseBehaviour : StateMachineBehaviour
 {
-    NavMeshAgent agent;
-    Transform player;
-    float attackRange;
-    float chaseRange;
-    float normalEnemySpeed;
+    protected NavMeshAgent agent;
+    protected float attackRange;
+    protected float normalEnemySpeed;
+    protected Transform player;
+    protected float chaseRange;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

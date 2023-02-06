@@ -7,11 +7,14 @@ public class PatrolBehavior : StateMachineBehaviour
 {
     List<Transform> points = new List<Transform>();
     NavMeshAgent agent;
-    Transform player;
-    float chaseRange;
+    protected Transform player;
+    protected float chaseRange;
+    private string pointListName;
+
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Transform pointsObject = GameObject.FindGameObjectWithTag("Points").transform;
+        pointListName = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyParametrs>().pointListName;
+        Transform pointsObject = GameObject.FindGameObjectWithTag(pointListName).transform;
         foreach(Transform t in pointsObject)
             points.Add(t);
         agent = animator.GetComponent<NavMeshAgent>();
