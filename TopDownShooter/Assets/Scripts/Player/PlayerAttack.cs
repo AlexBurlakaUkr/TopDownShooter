@@ -5,27 +5,40 @@ using UnityEngine.UI;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public List<Transform> enemys = new List<Transform>();
-    private string enemyListName = "Enemies";
-    public float attackRadius;
+    private string enemyListName = "Enemy";
+    private string animationCommand = "Fire";
+    private SphereCollider trigerCollider;
     protected Animator animator;
     [SerializeField] internal bool isGetKey = false;
 
     private void Start()
     {
+        trigerCollider = GetComponent<SphereCollider>();
+        trigerCollider.radius = GetComponent<PlayerController>().attackRadius * 1.25f;
         animator = GetComponent<Animator>();
-        Transform enemysObject = GameObject.FindGameObjectWithTag(enemyListName).transform;
-        foreach (Transform t in enemysObject)
-            enemys.Add(t);
     }
-    private void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        foreach (Transform enemy in enemys)
+        if (other.gameObject.CompareTag(enemyListName))
         {
-            float distance = Vector3.Distance(enemy.position, transform.position);
-            if (distance < attackRadius) animator.SetBool("Fire", true);
-            //if (distance > attackRadius) animator.SetBool("Fire", false);
+            GlobalEventManager.SendWeaponFire();
         }
-
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag(enemyListName))
+        {
+            transform.LookAt(other.gameObject.transform.position);
+            animator.SetBool(animationCommand, true);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag(enemyListName))
+        {
+            Debug.Log("StopAttack");
+            animator.SetBool(animationCommand, false);
+            GlobalEventManager.SendStopWeaponFire();
+        }
     }
 }

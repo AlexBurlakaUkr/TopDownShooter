@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float playerMoveSpeed;
-    [SerializeField] private float attackRadius;
+    [SerializeField] internal float attackRadius;
     [SerializeField] private Image radiusVisualizator;
     [SerializeField] private VariableJoystick joystick;
 

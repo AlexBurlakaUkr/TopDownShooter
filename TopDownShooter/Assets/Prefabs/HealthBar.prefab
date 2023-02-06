@@ -38,7 +38,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 3.352}
+  m_AnchoredPosition: {x: 0, y: 3.3519897}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7984217753029110460
@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 7984217753458367844}
   - component: {fileID: 7984217753458367845}
   - component: {fileID: 7984217753458367842}
+  - component: {fileID: 5424594805423557612}
   m_Layer: 5
   m_Name: Bar
   m_TagString: Untagged
@@ -192,6 +193,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invert: 0
+--- !u!114 &5424594805423557612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7984217753458367840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5532e974130444fb9302a6c1d24b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 10
 --- !u!1 &7984217754981456463
 GameObject:
   m_ObjectHideFlags: 0
