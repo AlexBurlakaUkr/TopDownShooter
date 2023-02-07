@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class KeyDestroy : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<PlayerAttack>().isGetKey = true;
+            collision.gameObject.GetComponent<PlayerAttack>().isGetKey = true;
             gameObject.SetActive(false);
         }
     }

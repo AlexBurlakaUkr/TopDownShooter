@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] internal float attackRadius;
     [SerializeField] private Image radiusVisualizator;
     [SerializeField] private VariableJoystick joystick;
+    [SerializeField] private HealthBar healthBar;
 
     private Animator playerAnimator;
     private Rigidbody playerRigitbody;
@@ -46,6 +47,25 @@ public class PlayerController : MonoBehaviour
     private void GetLookRotation()
     {
         if (joystick.Horizontal != 0 || joystick.Vertical != 0) transform.rotation = Quaternion.LookRotation(playerRigitbody.velocity);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("EnemyContact");
+            healthBar.HP -= collision.gameObject.GetComponent<EnemyParametrs>().enemyDamage;
+            RestrictionForHP();
+        }
+    }
+    private void RestrictionForHP()
+    {
+        if (healthBar.HP <= 0)
+        {
+            healthBar.HP = 0;
+            GlobalEventManager.SendPlayerKill();
+            playerAnimator.SetTrigger("DieP");
+        }
+
     }
     //void OnDrawGizmosSelected()
     //{

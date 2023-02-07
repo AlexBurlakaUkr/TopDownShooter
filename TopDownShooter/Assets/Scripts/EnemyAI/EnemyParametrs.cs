@@ -10,14 +10,15 @@ public class EnemyParametrs : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private Transform coinPrefab;
     [SerializeField] private Animator playerAnimator;
+    [SerializeField] internal float enemyDamage;
     private string animationCommand = "Fire";
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
             healthBar.HP -= collision.gameObject.GetComponent<BulletDestroy>().bulletAttackPower;
+            Destroy(collision.gameObject);
             RestrictionForHP();
-            Debug.Log("Shot Enemy");
         }
     }
     private void RestrictionForHP()
@@ -25,7 +26,7 @@ public class EnemyParametrs : MonoBehaviour
         if (healthBar.HP <= 0)
         {
             healthBar.HP = 0;
-            //GlobalEventManager.SendPlayerDeath();
+            GlobalEventManager.SendEnemyDeath();
             GlobalEventManager.SendStopWeaponFire();
             playerAnimator.SetBool(animationCommand, false);
             gameObject.SetActive(false);
