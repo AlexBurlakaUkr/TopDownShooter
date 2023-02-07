@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] Transform spawnPoint;
     [SerializeField] private float bulletSpeed = 10f;
     [SerializeField] private float fireInterval = 0.3f;
+    [SerializeField] private ParticleSystem fire;
     private void Start()
     {
         GlobalEventManager.OnStopWeaponFire.AddListener(GetStopWeaponFire);
@@ -19,6 +20,7 @@ public class Weapon : MonoBehaviour
     }
     public void GetShot()
     {
+        fire.Play();
         var bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
         bullet.AddRelativeForce(Vector3.forward * bulletSpeed);
     }

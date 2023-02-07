@@ -9,8 +9,8 @@ public class OpenDoor : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player") && other.gameObject.GetComponent<PlayerAttack>().isGetKey == true)
         {
-            transform.Translate(moveVector * Time.deltaTime * speed);
-            transform.GetComponent<BoxCollider>().enabled = false;
+            transform.position =  Vector3.Lerp(transform.position, moveVector, speed);
+            Debug.Log("DoorContact");
         }
 
     }

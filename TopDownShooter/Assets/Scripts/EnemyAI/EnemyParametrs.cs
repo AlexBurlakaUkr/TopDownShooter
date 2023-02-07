@@ -17,7 +17,7 @@ public class EnemyParametrs : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             healthBar.HP -= collision.gameObject.GetComponent<BulletDestroy>().bulletAttackPower;
-            Destroy(collision.gameObject);
+            Destroy(collision.gameObject, 0.55f);
             RestrictionForHP();
         }
     }

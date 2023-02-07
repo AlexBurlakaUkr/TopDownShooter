@@ -10,7 +10,6 @@ public class EnemyPatrol : MonoBehaviour
     private NavMeshAgent agent;
     protected Transform player;
     protected float chaseRange;
-    //protected float normalEnemySpeed;
 
     private void Start()
     {
@@ -18,7 +17,6 @@ public class EnemyPatrol : MonoBehaviour
         agent.SetDestination(moveSpots[0].position);
         player = GameObject.FindGameObjectWithTag("Player").transform;
         chaseRange = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyParametrs>().chaseRange;
-        //normalEnemySpeed = transform.GetComponent<NavMeshAgent>().speed;
     }
     private void Update()
     {
