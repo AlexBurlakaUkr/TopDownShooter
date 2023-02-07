@@ -165,7 +165,6 @@ GameObject:
   - component: {fileID: 900676433033178215}
   - component: {fileID: 5997435618803624962}
   - component: {fileID: 1503723857617271561}
-  - component: {fileID: 8834150301542626406}
   m_Layer: 5
   m_Name: Gun
   m_TagString: Untagged
@@ -306,17 +305,3 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.2627451}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
---- !u!114 &8834150301542626406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6149342879263692190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a03ff19ad17846d4cb24bf0f76fcc20b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 5316212704907162130}
-  button: {fileID: 900676433033178215}
