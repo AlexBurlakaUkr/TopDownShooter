@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class CoinDestroy : MonoBehaviour
 {
-
+    [SerializeField] private AudioSource coinSounds;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            coinSounds.Play();
             GlobalEventManager.SendCoinCount();
-            gameObject.SetActive(false);
+            transform.GetComponent<SphereCollider>().enabled = false;
+            Invoke(nameof(GetSetActive), 0.2f);
         }
     }
+    private void GetSetActive() => gameObject.SetActive(false);
 }

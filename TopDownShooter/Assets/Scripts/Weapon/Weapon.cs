@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float bulletSpeed = 10f;
     [SerializeField] private float fireInterval = 0.3f;
     [SerializeField] private ParticleSystem fire;
+    [SerializeField] private AudioSource weaponFireSound;
     private void Start()
     {
         GlobalEventManager.OnStopWeaponFire.AddListener(GetStopWeaponFire);
@@ -21,6 +22,7 @@ public class Weapon : MonoBehaviour
     public void GetShot()
     {
         fire.Play();
+        weaponFireSound.Play();
         var bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
         bullet.AddRelativeForce(Vector3.forward * bulletSpeed);
     }

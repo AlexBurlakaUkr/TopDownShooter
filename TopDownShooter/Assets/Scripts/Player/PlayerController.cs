@@ -63,6 +63,7 @@ public class PlayerController : MonoBehaviour
         {
             healthBar.HP = 0;
             GlobalEventManager.SendPlayerKill();
+            GlobalEventManager.SendStopWeaponFire();
             playerAnimator.SetTrigger("DieP");
         }
 

@@ -5,10 +5,12 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject winLevel;
     [SerializeField] private GameObject restartLevel;
+    [SerializeField] AudioSource fonMusic;
     private void Start()
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         GlobalEventManager.OnPlayerKill.AddListener(GetRestartLevel);
+        fonMusic.Play();
     }
     public void RestartLevel()
     {
