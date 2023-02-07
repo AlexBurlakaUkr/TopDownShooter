@@ -24,9 +24,8 @@ public class EnemyPatrol : MonoBehaviour
             agent.SetDestination(moveSpots[Random.Range(0, moveSpots.Length)].position);
 
         float distance = Vector3.Distance(agent.transform.position, player.transform.position);
-        Debug.Log(distance);
 
-        if (distance < chaseRange)
+        if (distance < chaseRange && distance >= 2f)
         {
             agent.SetDestination(player.position);
         }
